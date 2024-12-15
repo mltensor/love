@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my Pragya</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<audio id="song" autoplay>
+	<source src="song.mp3" type="audio/mp3">
+	<!-- Your browser does not support the audio element. -->
+</audio>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<!-- <span class="comments">/**</span><br /> -->
+			from mine import her<br />
+			<!-- <span class="space"/><span class="comments"></span><br /> -->
+			<span class="comments">Loads of warnings... you can't handle</span><br/>
+			<br>
+			Ohk... Hug Her<br />
+			<span class="comments">She is sad and angry... hehe</span><br />
+			<br>
+			🥹🥹🥹🥹<br />
+			I know I shouldn't have said things which I keep saying<br />
+			I was supposed to stay with you on the call... well I'm an idiot<br />
+			I also know ki aap ganda wala gussa ho 🫂🫂<br />
+			I'm irritating as well... daily same cheez kar deta<br />
+			And I do love you na babe... to ho jaati cheeze thodi thodi<br />
+			Aur dher saara sorry cutie... maan jao please
+			<br>
+			<br>
+			Now... hug her<br />
+			<span class="comments">Try another way.... har baar same karega kya</span><br/>
+			<br>
+			ohk... bolo bhaap 🤭<br/>
+			Love you baby... atom se black hole wala <br/>
+			<br>
+			<span class="ask">
+			Now If you want to hug me you can touch the heart below.. thoda sa imagined hai bas... real wala photo bhi hoga next time se
+			</span><br />
+			<span class="comments">Next time bhi same tarike se manayega na... 🙂</span>
+			<br>
+			Here's my heart baby<br/>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					FOREVER
+				<div id="loveu">
+					I LOVE YOU CUTIE<br/>
+					<div class="signature">- Yours</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2024, 12, 15);
+together.setHours(14);
+together.setMinutes(42);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
