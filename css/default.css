@@ -26,6 +26,7 @@ button {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
+    transform-origin: center;
     background-color: #ff5c5c; /* Heart color */
     color: white;
     border: none;
@@ -34,13 +35,13 @@ button {
     height: 40px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 
 /* Active (clicked) effect for the button */
 button:active {
-    transform: scale(0.95);
+    transform: translateX(-50%) scale(0.9);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
